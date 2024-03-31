@@ -6,7 +6,6 @@ Automated teller machines (ATM) require the user to enter a PIN Number to access
 <div align="center">
   <img src="images/atm.png">
 </div>
-![""](images/atm.png)
 
 ## Program Rules:
 
