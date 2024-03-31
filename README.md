@@ -7,5 +7,7 @@ Automated teller machines (ATM) require the user to enter a PIN Number to access
 ## Program Rules:
 
 ▪ PIN assigned to Bank Card is a constant value - 9681.
+
 ▪ If the PIN code entered does not match the proper format (not a 4-numbered pin), the program displays "INVALID PIN FORMAT" and does not count the entry as an incorrect PIN.
+
 ▪ It is assumed that only numbers are entered by the user since only numpads are usually available on ATMs
