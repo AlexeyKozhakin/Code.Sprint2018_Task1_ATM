@@ -4,7 +4,7 @@
 
 Automated teller machines (ATM) require the user to enter a PIN Number to access the bank card. Write a program that simulates this part of the ATM program. The program should ask the user to enter a four-numbered PIN code. If it matches the PIN code assigned to the Bank Card, it displays "CORRECT PIN"; otherwise it displays "INCORRECT PIN". The program should warn the user that the ATM will hold the bank card by displaying "BANK CARD HELD" upon entering the wrong PIN code for three (3) consecutive times.
 
-!(images/atm.png)
+![""](images/atm.png)
 
 ## Program Rules:
 
