@@ -32,9 +32,9 @@ class TestProgram(unittest.TestCase):
         process = subprocess.Popen(['python', 'atm.py'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         stdout, stderr = process.communicate(input=inputs)
         outs = stdout.split('\n')
-        for out in outs[:3]:
-            self.assertIn('CORRECT PIN', out)
-        self.assertIn('BANK CARD HELD', outs[3])
+        for out in outs[:4]:
+            assert 'INCORRECT PIN' == out
+        self.assertIn('BANK CARD HELD', outs[4])
         print("Test 4 passed")
 
     def test_5(self):
@@ -44,7 +44,8 @@ class TestProgram(unittest.TestCase):
         self.assertIn('INVALID PIN FORMAT', outs[0])
         self.assertIn('INVALID PIN FORMAT', outs[1])
         self.assertIn('INVALID PIN FORMAT', outs[2])
-        self.assertIn('BANK CARD HELD', outs[3])
+        self.assertIn('INVALID PIN FORMAT', outs[3])
+        self.assertIn('BANK CARD HELD', outs[4])
         print("Test 5 passed")
 
 
